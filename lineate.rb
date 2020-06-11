@@ -26,6 +26,7 @@ end
 verse = File.open('gaza-batrachomyomachia-verse.md').read
 current_line = 0
 File.open('gaza-batrachomyomachia-aligned.csv','w') do |aligned_csv|
+  aligned_csv.puts '"",Verse,Prose Paraphrase'
   verse.each_line do |line|
     line.chomp!
     unless line == '---'
