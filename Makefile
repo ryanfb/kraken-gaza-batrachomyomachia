@@ -7,4 +7,7 @@ gaza-batrachomyomachia-verse.md: gaza-batrachomyomachia.yaml nfc/batrachomyomach
 	./make-verse.sh
 
 gaza-batrachomyomachia-lineated.md: gaza-batrachomyomachia.md lineate.rb line-endings.csv
-	./lineate.rb > gaza-batrachomyomachia-lineated.md
+	./lineate.rb
+
+gaza-batrachomyomachia-aligned.csv: gaza-batrachomyomachia.md gaza-batrachomyomachia-verse.md lineate.rb
+	./lineate.rb
