@@ -1,4 +1,4 @@
-all: gaza-batrachomyomachia.md gaza-batrachomyomachia-verse.md gaza-batrachomyomachia-lineated.md gaza-batrachomyomachia-aligned.md
+all: gaza-batrachomyomachia.md gaza-batrachomyomachia-verse.md gaza-batrachomyomachia-lineated.md gaza-batrachomyomachia-aligned.md gaza-batrachomyomachia-aligned.pdf
 
 gaza-batrachomyomachia.md: nfc/batrachomyomachia_prose_*.txt make-text.sh
 	./make-text.sh
