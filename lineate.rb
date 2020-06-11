@@ -30,6 +30,7 @@ File.open('gaza-batrachomyomachia-aligned.csv','w') do |aligned_csv|
   verse.each_line do |line|
     line.chomp!
     unless line == '---'
+      line.sub!(/^\d+\. /,'')
       aligned_csv.puts "#{current_line + 1},\"#{line}\",\"#{prose_lines[current_line]}\""
       current_line += 1
     end
