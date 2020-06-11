@@ -3,6 +3,8 @@ description: "Theodorus of Gaza's Attic prose paraphrase of the \"Batrachomyomac
 plugins:
   - jekyll-remote-theme
   - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
 defaults:
   -
     scope:
